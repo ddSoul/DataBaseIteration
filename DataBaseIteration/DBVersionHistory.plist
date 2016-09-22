@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>userTable</key>
+		<array>
+			<string>alter table t_mineData rename to tempT1</string>
+			<string>CREATE TABLE IF NOT EXISTS t_mineData(testId TEXT PRIMARY KEY NOT NULL, testname TEXT);</string>
+			<string>insert into t_mineData(testId,testname)  select userId,nickname from tempT1</string>
+			<string>drop table tempT1</string>
+		</array>
+	</dict>
+</array>
+</plist>
