@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
+    //数据库初始化
     [UserInfoDbManager formattingData];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

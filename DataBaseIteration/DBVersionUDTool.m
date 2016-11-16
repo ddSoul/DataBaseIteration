@@ -34,7 +34,7 @@ static FMDatabaseQueue *_queue;
     //读取工程中plist文件的数据库版本
     NSArray *tempArray = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DBVersionHistory.plist" ofType:nil]];
 
-    //测试，设置默认值
+    //测试，设置默认值,若更新版本可以在枚举里面添加枚举值，switch中添加case即可
     XYUserDBVersion version = 0;
     
         switch (version) {
